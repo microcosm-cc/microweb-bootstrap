@@ -142,12 +142,11 @@
 
   @media (min-width: @screen-sm-min){
     display:block;
-    border-left: 1px solid #EEE;
     width: 200px;
     position: absolute;
-    right: 0;
-    top: 114px;
-    margin-bottom: -8px;
+    right: 80px;
+    top: 30px;
+    border: 1px solid #CCC;
 
     .navbar-profile-row-1-left{
       padding-top:9px;
@@ -183,6 +182,8 @@
 
     position: relative;
     top: 0;
+    right: 0;
+    border-width: 0;
 
     .navbar-profile-row-1-left{
       padding:0;
@@ -249,34 +250,6 @@
 }
 
 
-.navbar-search{
-  display:none;
-  &.in,
-  &.collapsing{
-    display:block;
-  }
-  input[type=text]{
-    border-radius:40px;
-  }
-  .input-group-addon{
-    border-radius:20px 0 0 20px;
-    background-color:#fff;
-    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.075);
-    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.075);
-  }
-  @media (min-width: @grid-float-breakpoint) {
-    display:block;
-    margin-top:8px;
-    .input-group-addon{
-      border-color:#999;
-      cursor:text;
-    }
-    .form-control{
-      border-color:#999;
-    }
-  }
-}
-
 .navbar-nav-wrapper {
   background-color: #FFF;
   border-bottom:1px solid #ccc;
@@ -297,7 +270,7 @@
   max-height:100%;
   .navbar-profile{
     display:block;
-    margin-bottom:@line-height-computed/2;
+    margin-top:@line-height-computed/2;
     .navbar-profile-row-1-left{
       padding:0;
     }
@@ -343,9 +316,15 @@
       border-bottom:0;
     }
   }
-  &.navbar-nav-search{
+  &>li.navbar-nav-search{
     border-bottom:0;
-    padding:5px 0 0;
+    padding:5px 0;
+    .input-group-btn button{
+      padding:8px 15px;
+      border:1px solid #ccc;
+      border-left:0;
+      margin-left:0;
+    }
   }
   @media (min-width:@screen-sm-min){
     margin-bottom:0;
@@ -363,10 +342,23 @@
         }
       }
     }
-    &.navbar-nav-search,
     &.navbar-nav-unregistered,
     &.navbar-nav-registered{
       display:none;
+    }
+    &>li.navbar-nav-search{
+      float:right;
+      padding:0 7px 0 0;
+
+      form{
+        margin-top:8px
+      }
+      #navbar-search-input{
+        height:36px;
+      }
+      .input-group-btn button{
+        padding:5px 10px;
+      }
     }
   }
   @media (min-width:@screen-md-min){
@@ -383,12 +375,13 @@
 
 .navbar-toggle-btn{
   outline: 0;
-  height: 45px;
+  height: 51px;
   width: 45px;
   border: 0;
   background-color: #FFF;
   margin-top: 6px;
   border-radius: 0;
+  border: 1px solid #CCC;
 }
 .menu-toggle{
   float:left;
