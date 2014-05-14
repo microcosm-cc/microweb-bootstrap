@@ -173,7 +173,7 @@ module.exports = function (grunt) {
         expand  : true,
         cwd     : 'dist/css/',
         src     : '**',
-        dest    : '../microweb/microcosm/static/themes/1/css/',
+        dest    : '../microweb/core/static/themes/1/css/',
         flatten : true,
         filter  : 'isFile',
       },
@@ -181,7 +181,7 @@ module.exports = function (grunt) {
         expand  : true,
         cwd     : 'dist/js/',
         src     : '**',
-        dest    : '../microweb/microcosm/static/js/',
+        dest    : '../microweb/core/static/js/',
         flatten : true,
         filter  : 'isFile',
       }
