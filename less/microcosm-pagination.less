@@ -54,6 +54,12 @@
   overflow: auto;
   position:relative;
   height:47px;
+  .center{
+    width:40%;
+    left:30%;
+    right:30%;
+    position:absolute;
+  }
   form{
     display:inline-block;
   }
@@ -66,17 +72,16 @@
   }
 
   .pagination-alt-btn {
-    position: absolute;
   }
-  .pagination-alt-prev {
-    left:0;
-    top:0;
+  .pagination-alt-left {
+    float:left;
     border-right:1px solid @gray-light;
+    margin-right:4px;
   }
-  .pagination-alt-next {
-    right:0;
-    top:0;
+  .pagination-alt-right {
+    float:right;
     border-left:1px solid @gray-light;
+    margin-left:4px;
   }
 
   @media (min-width: @grid-float-breakpoint) {
