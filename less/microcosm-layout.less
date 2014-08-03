@@ -97,22 +97,23 @@ a.muted{
 }
 
 blockquote{
-  margin:0 0 @line-height-computed/2;
-  border:0;
-  background: url('/static/img/quote-marks.png') no-repeat 10px 10px #FBFBFB;
-  padding: @line-height-computed/2 0 @line-height-computed/2 40px;
-  border-left: 2px solid #CCC;
+  padding-left: 0.75em;
+  border-left: 0.19em solid #ddd;
+  margin-left: 0;
+  font-style: italic;
   overflow: auto;
-  &>blockquote{
-    border-left:0;
-  }
+
   p{
-    color: @gray;
+    color: #888;
     font-size: @font-size-medium;
     line-height: @line-height-computed;
   }
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   h1,h2,h3,h4,h5,h6,li{
-    color: @gray;
+    color: #888;
   }
 }
 // list layout styles for collection of items
