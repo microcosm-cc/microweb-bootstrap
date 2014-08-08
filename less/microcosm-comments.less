@@ -83,10 +83,10 @@
 
 .comment-item-body{
   margin-bottom:10px;
-  font-size:@font-size-base;
+  font-size:@font-size-comment;
   font-family:@font-family-serif;
   text-rendering: optimizeLegibility;
-  line-height:@line-height-computed;
+  line-height: @line-height-comment;
 
   img{
     max-width:100%;
@@ -96,7 +96,7 @@
     max-width: 100% !important;
   }
   p{
-    margin-bottom: @line-height-computed/2;
+    margin-bottom: @line-height-comment/2;
   }
   .img-caption{
     display:block;
@@ -114,14 +114,14 @@
 
   }
   ol,ul{
-    margin-bottom:@line-height-computed/2;
+    margin-bottom:@line-height-comment/2;
   }
   ul.comment-item-body-attachments{
     padding:0;
     margin:0;
     list-style:none;
     &>li>img{
-      margin-bottom:@line-height-computed;
+      margin-bottom:@line-height-comment;
     }
   }
   table{
@@ -130,7 +130,7 @@
 
   }
   h1,h2,h3,h4,h5,h6{
-    margin-top:@line-height-computed/2;
+    margin-top:@line-height-comment/2;
   }
   h1{
     line-height: @font-size-h1 * 1.1;
@@ -138,9 +138,9 @@
 
   @media (min-width: @screen-sm-min){
     margin-bottom:20px;
-    font-size:@font-size-medium;
+    font-size:@font-size-comment;
     text-rendering: optimizeLegibility;
-    line-height:@font-size-medium * 1.5;
+    line-height: @line-height-comment;
   }
 }
 .comment-item-footer{
