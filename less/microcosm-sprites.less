@@ -37,23 +37,135 @@
     background-image: url('/static/img/icons@2x.png');
   }
 }
+
 .sprite-size-small{
   width:            @sprite-small-width;
   height:           @sprite-small-height;
 }
+
 .sprite-speech-bubble{
   background-position: 0 0;
-}
-.sprite-speech-bubble-small{
-  .sprite-size-small;
-  background-position: 0 @sprite-row-5;
 }
 
 .sprite-calendar{
   background-position: (@sprite-scaled-width * -1) 0;
 }
+
+.sprite-map-marker{
+  background-position: (@sprite-scaled-width * -2) 0;
+}
+
+.sprite-pushpin{
+  background-position: (@sprite-scaled-width * -3) 0;
+}
+
+.sprite-menu-2{
+  background-position: (@sprite-scaled-width * -4) 0;
+}
+
+.sprite-speech-bubble-single{
+  background-position: (@sprite-scaled-width * -5) 0;
+}
+
+.sprite-attending{
+  background-position: 0 @sprite-row-2;
+}
+
+.sprite-envelope{
+  background-position: (@sprite-scaled-width * -1) @sprite-row-2;
+}
+
+.sprite-quote{
+  background-position: (@sprite-scaled-width * -2) @sprite-row-2;
+}
+
+.sprite-lock{
+  background-position: (@sprite-scaled-width * -3) @sprite-row-2;
+}
+
 .sprite-calendar-2{
   background-position: (@sprite-scaled-width * -4) @sprite-row-2;
+}
+
+.sprite-microcosm{
+  background-position: (@sprite-scaled-width * -5) @sprite-row-2;
+}
+
+.sprite-user{
+  background-position: 0 @sprite-row-3;
+}
+
+.sprite-user-group{
+  background-position: (@sprite-scaled-width * -1) @sprite-row-3;
+}
+
+.label-warning{
+  .sprite-envelope{
+    background-position:(@sprite-scaled-width * -2) @sprite-row-3;
+  }
+}
+
+.sprite-pencil{
+  background-position: (@sprite-scaled-width * -3) @sprite-row-3;
+}
+
+.sprite-drawer{
+  background-position: (@sprite-scaled-width * -4) @sprite-row-3;
+}
+
+.sprite-arrow-reply{
+  .sprite-size-small;
+  background-position: 0 @sprite-row-4;
+}
+
+.sprite-arrow-forward{
+  .sprite-size-small;
+  background-position: (@sprite-small-width * -1) @sprite-row-4;
+}
+
+.sprite-arrow-left{
+  .sprite-size-small;
+  background-position: (@sprite-small-width * -2) @sprite-row-4;
+}
+
+.sprite-arrow-right{
+  .sprite-size-small;
+  background-position: (@sprite-small-width * -3) @sprite-row-4;
+}
+
+.sprite-arrow-jump-left{
+  .sprite-size-small;
+  background-position: (@sprite-small-width * -4) @sprite-row-4;
+}
+
+.sprite-arrow-jump-right{
+  .sprite-size-small;
+  background-position: (@sprite-small-width * -5) @sprite-row-4;
+}
+
+.sprite-format-link{
+  .sprite-size-small;
+  background-position:(@sprite-small-width * -6) @sprite-row-4;
+}
+
+.sprite-format-list{
+  .sprite-size-small;
+  background-position:(@sprite-small-width * -7) @sprite-row-4;
+}
+
+.sprite-format-img{
+  .sprite-size-small;
+  background-position:(@sprite-small-width * -8) @sprite-row-4;
+}
+
+.sprite-quote-small{
+  .sprite-size-small;
+  background-position:(@sprite-small-width * -9) @sprite-row-4;
+}
+
+.sprite-speech-bubble-small{
+  .sprite-size-small;
+  background-position: 0 @sprite-row-5;
 }
 
 .sprite-calendar-small{
@@ -61,43 +173,9 @@
   background-position: (@sprite-small-width * -1) @sprite-row-5;
 }
 
-.sprite-map-marker{
-  background-position: (@sprite-scaled-width * -2) 0;
-}
-.sprite-pushpin{
-  background-position: (@sprite-scaled-width * -3) 0;
-}
-.sprite-lock{
-  background-position: (@sprite-scaled-width * -4) 0;
-}
-.sprite-attending{
-  background-position: (@sprite-scaled-width * 0) @sprite-row-2;
-}
-.sprite-user{
-  background-position: (@sprite-scaled-width * 0) @sprite-row-3;
-}
-.sprite-user-group{
-  background-position: (@sprite-scaled-width * -1) @sprite-row-3;
-}
-
-.sprite-envelope{
-  background-position: (@sprite-scaled-width * -1) @sprite-row-2;
-}
 .sprite-envelope-small{
   .sprite-size-small;
   background-position: (@sprite-small-width * -2) @sprite-row-5;
-}
-.label-warning{
-  .sprite-envelope{
-    background-position:(@sprite-scaled-width * -2) @sprite-row-3;
-  }
-  .sprite-envelope-small{
-    background-position: (@sprite-small-width * -1) @sprite-row-6;
-  }
-}
-
-.sprite-quote{
-  background-position: (@sprite-scaled-width * -2) @sprite-row-2;
 }
 
 .sprite-search-small{
@@ -110,21 +188,36 @@
   background-position: (@sprite-small-width * -4) @sprite-row-5;
 }
 
+.sprite-pencil-small{
+  .sprite-size-small;
+  background-position: (@sprite-small-width * -5) @sprite-row-5;
+}
+
+.sprite-help-small{
+  .sprite-size-small;
+  background-position: (@sprite-small-width * -6) @sprite-row-5;
+}
+
+.sprite-nib-up{
+  width:16px;
+  height:8px;
+  background-position: (@sprite-small-width * -7)  @sprite-row-5;
+}
+
+.sprite-nib-down{
+  width:16px;
+  height:8px;
+  background-position: (@sprite-small-width * -7) @sprite-row-5 - 8px;
+}
+
 .sprite-logout{
   .sprite-size-small;
-  background-position:  (@sprite-small-width * -8) @sprite-row-5;
+  background-position: (@sprite-small-width * -8) @sprite-row-5;
 }
 
-.sprite-menu-2{
-  background-position: (@sprite-scaled-width * -4) 0;
-}
-
-.sprite-speech-bubble-single{
-  background-position: (@sprite-scaled-width * -5) 0;
-}
-
-.sprite-microcosm{
-  background-position: (@sprite-scaled-width * -5) @sprite-row-2;
+.sprite-bold-small{
+  .sprite-size-small;
+  background-position:(@sprite-small-width * -9) @sprite-row-5;
 }
 
 .sprite-branch-arrow-right{
@@ -132,101 +225,23 @@
   background-position: 0 @sprite-row-6;
 }
 
-.sprite-pencil{
-  background-position: (@sprite-scaled-width * -3) @sprite-row-3;
-}
-.sprite-pencil-small{
-  .sprite-size-small;
-  background-position: (@sprite-small-width * -5) @sprite-row-5;
+.label-warning{
+  .sprite-envelope-small{
+    background-position: (@sprite-small-width * -1) @sprite-row-6;
+  }
 }
 
-.sprite-drawer{
-  background-position: (@sprite-scaled-width * -4) @sprite-row-3;
-}
-
-////////////////////////
-//  Pagination icons  //
-////////////////////////
-
-.sprite-arrow-reply{
-  .sprite-size-small;
-  background-position: (@sprite-small-width * 0) @sprite-row-4;
-}
-.sprite-arrow-forward{
-  .sprite-size-small;
-  background-position: (@sprite-small-width * -1) @sprite-row-4;
-}
-.sprite-arrow-left{
-  .sprite-size-small;
-  background-position: (@sprite-small-width * -2) @sprite-row-4;
-}
-.sprite-arrow-right{
-  .sprite-size-small;
-  background-position: (@sprite-small-width * -3) @sprite-row-4;
-}
-.sprite-arrow-jump-left{
-  .sprite-size-small;
-  background-position: (@sprite-small-width * -4) @sprite-row-4;
-}
-.sprite-arrow-jump-right{
-  .sprite-size-small;
-  background-position: (@sprite-small-width * -5) @sprite-row-4;
-}
-
-
-/////////////////////
-//  editing icons  //
-/////////////////////
-
-.sprite-format-link{
-  .sprite-size-small;
-  background-position:(@sprite-small-width * -6) @sprite-row-4;
-}
-.sprite-format-list{
-  .sprite-size-small;
-  background-position:(@sprite-small-width * -7) @sprite-row-4;
-}
-.sprite-format-img{
-  .sprite-size-small;
-  background-position:(@sprite-small-width * -8) @sprite-row-4;
-}
-.sprite-help-small{
-  .sprite-size-small;
-  background-position:(@sprite-small-width * -6) @sprite-row-5;
-}
-.sprite-bold-small{
-  .sprite-size-small;
-  background-position:(@sprite-small-width * -9) @sprite-row-5;
-}
 .sprite-italic-small{
   .sprite-size-small;
   background-position:(@sprite-small-width * -2) @sprite-row-6;
 }
-.sprite-quote-small{
-  .sprite-size-small;
-  background-position:(@sprite-small-width * -9) @sprite-row-4;
-}
-.sprite-preview-small{
-  .sprite-size-small;
-  background-position:(@sprite-small-width * -4) @sprite-row-6;
-}
+
 .sprite-code-small{
   .sprite-size-small;
   background-position:(@sprite-small-width * -3) @sprite-row-6;
 }
 
-
-////////////////////////////////////////////
-//  popup dialog "speech bubbles" arrows  //
-////////////////////////////////////////////
-
-.sprite-nib-up{
-  width:16px;
-  height:8px;
-  background-position:(@sprite-small-width * -7)  @sprite-row-5;
-}
-.sprite-nib-down{
-  width:16px;
-  height:8px;
-  background-position:(@sprite-small-width * -7) @sprite-row-5 - 8px;
+.sprite-preview-small{
+  .sprite-size-small;
+  background-position:(@sprite-small-width * -4) @sprite-row-6;
 }
