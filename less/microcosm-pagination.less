@@ -1,6 +1,3 @@
-.pagination-wrapper{
-  overflow: auto;
-}
 .pagination{
   padding:0;
   margin:0;
@@ -39,14 +36,20 @@
       text-decoration: none;
     }
   }
+  @media (min-width: @screen-xs-min) {
+    display:inline-block;
+    float:right;
+    margin-bottom: 4px;
+  }
   @media (min-width: @screen-sm-min) {
     display:inline-block;
     float:right;
+    margin-bottom: 0;
   }
 }
 
 .pagination-alt {
-  display: block;
+  display: none;
   clear: left;
   text-align: center;
   color: #666;
@@ -70,21 +73,7 @@
     padding:0;
     text-align: center;
   }
-
-  .pagination-alt-btn {
-  }
-  .pagination-alt-left {
-    float:left;
-    border-right:1px solid @gray-light;
-    margin-right:4px;
-  }
-  .pagination-alt-right {
-    float:right;
-    border-left:1px solid @gray-light;
-    margin-left:4px;
-  }
-
-  @media (min-width: @grid-float-breakpoint) {
+  @media (min-width: @screen-xs-min) {
     display:inline-block;
     float:right;
     margin-right:10px;
@@ -94,9 +83,6 @@
     padding: 0;
     background: none;
     border: 0;
-    .pagination-alt-btn {
-      display:none;
-    }
     input[type=text]{
       height: 27px;
     }
@@ -104,7 +90,63 @@
 }
 .content-header .pagination-alt{
   display:none;
-  @media (min-width: @screen-sm-min){
+  @media (min-width: @screen-xs-min){
     display:inline-block;
+  }
+}
+.pagination-alt-xs {
+  display: block;
+  clear: left;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  overflow: auto;
+  position:relative;
+  height:47px;
+  .center{
+    width:40%;
+    left:30%;
+    right:30%;
+    position:absolute;
+  }
+  form{
+    display:none;
+  }
+  input[type=text]{
+    display: inline;
+    width: 50px;
+    height: 33px;
+    padding:0;
+    text-align: center;
+  }
+
+  .pagination-alt-btn {
+  }
+  .pagination-alt-left {
+    padding: 5px 6px;
+    float:left;
+    border-right:1px solid @gray-light;
+    margin-right:1px;
+  }
+  .pagination-alt-right {
+    padding: 5px 6px;
+    float:right;
+    border-left:1px solid @gray-light;
+    margin-left:1px;
+  }
+
+  @media (min-width: 300px) {
+    .pagination-alt-left {
+      margin-right:4px;
+    }
+    .pagination-alt-right {
+      margin-left:4px;
+    }
+    form{
+      display:inline-block;
+    }
+  }
+  @media (min-width: @screen-xs-min) {
+    display:none;
   }
 }
