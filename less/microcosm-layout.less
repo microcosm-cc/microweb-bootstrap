@@ -264,11 +264,12 @@ blockquote{
     color:#666;
     float:left;
     font-family: @font-family-serif;
-    font-size:@font-size-small;
+    font-size: floor((@font-size-comment * 0.9));
+    line-height: ceil((@line-height-comment * 0.9));
     blockquote p{
-      font-size:@font-size-small;
       color: #999;
-      line-height:@line-height-computed * 0.8;
+      font-size:floor((@font-size-comment * 0.8));
+      line-height:ceil((@line-height-comment * 0.8));
     }
     img{
       float:none;
@@ -279,7 +280,8 @@ blockquote{
       max-width:100% !important;
     }
     .prettyprint{
-      font-size:@font-size-small * 0.8;
+      font-size:floor((@font-size-comment * 0.8));
+      line-height:ceil((@line-height-comment * 0.8));
     }
   }
   @media (min-width: @grid-float-breakpoint){
