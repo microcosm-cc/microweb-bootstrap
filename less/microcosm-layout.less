@@ -105,8 +105,8 @@ blockquote{
 
   p{
     color: #888;
-    font-size: @font-size-medium;
-    line-height: @line-height-computed;
+    font-size:floor((@font-size-comment * 0.9));
+    line-height:ceil((@line-height-comment * 0.9));
   }
   p:last-child {
     margin-bottom: 0;
