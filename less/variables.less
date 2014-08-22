@@ -51,11 +51,11 @@
 // Typography
 // -------------------------
 
-@font-family-display:     source-sans-pro, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-@font-family-sans-serif:  source-sans-pro, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-@font-family-serif:       "Merriweather", elena-web, Elena, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-sans-serif:  "Source Sans Pro", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@font-family-serif:       "Merriweather", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", Courier, monospace;
 @font-family-base:        @font-family-sans-serif;
+@font-family-display:     @font-family-sans-serif;
 
 @font-size-base:          20px;
 @font-size-comment:       16px;
@@ -73,10 +73,10 @@
 
 @line-height-base:        1.5; // 30/20
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~30px
-@line-height-comment:     ceil((@font-size-comment * 1.5));
+@line-height-comment:     ceil((@font-size-comment * @line-height-base));
 
 @headings-font-family:    @font-family-display;
-@headings-font-weight:    700;
+@headings-font-weight:    600;
 @headings-line-height:    @line-height-computed;
 @headings-color:          inherit;
 
@@ -138,7 +138,7 @@
 // Buttons
 // -------------------------
 
-@btn-font-weight:                700;
+@btn-font-weight:                @headings-font-weight;
 
 @btn-default-color:              #666;
 @btn-default-bg:                 #fff;
@@ -477,7 +477,7 @@
 // -------------------------
 @alert-padding:               15px;
 @alert-border-radius:         @border-radius-base;
-@alert-link-font-weight:      bold;
+@alert-link-font-weight:      @headings-font-weight;
 
 @alert-success-bg:            @state-success-bg;
 @alert-success-text:          @state-success-text;
@@ -580,7 +580,7 @@
 @badge-active-color:          @link-color;
 @badge-active-bg:             #fff;
 
-@badge-font-weight:           bold;
+@badge-font-weight:           @headings-font-weight;
 @badge-line-height:           1;
 @badge-border-radius:         10px;
 
@@ -611,7 +611,7 @@
 
 // Close
 // ------------------------
-@close-font-weight:           bold;
+@close-font-weight:           @headings-font-weight;
 @close-color:                 #000;
 @close-text-shadow:           0 1px 0 #fff;
 

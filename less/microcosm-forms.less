@@ -48,7 +48,7 @@
     border: 1px solid #CCC;
     border-radius: 2px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: @headings-font-weight;
     width:33.33%;
     background-color:#fff;
     &:first-child{
@@ -92,12 +92,12 @@
   }
   .event-start-calendar-label{
     color: #FFA500;
-    font-weight: 700;
+    font-weight: @headings-font-weight;
     font-size: @font-size-small;
   }
   // override event date styles
   .item-event-date{
-    font-weight:700;
+    font-weight:@headings-font-weight;
     font-size:18px;
   }
   .item-event-date-digit{
@@ -116,7 +116,7 @@
   }
   .item-event-date-time{
     font-size:@font-size-base;
-    font-weight:700;
+    font-weight:@headings-font-weight;
     color:lighten(@brand-primary,0.5);
     display:block;
     clear:both;
