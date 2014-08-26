@@ -76,14 +76,8 @@
   input[type=reset]{
     width:auto;
     padding:5px 10px;
-    float: right;
-    margin-right:10px;
-  }
-  @media (min-width: @grid-float-breakpoint) {
-    input[type=reset]{
-      float: none;
-      margin-right:0;
-    }
+    float: none;
+    margin-right:0;
   }
 }
 .reply-box-attachments{
@@ -184,16 +178,14 @@
 }
 
 .formatting-help-handle{
-  display: block;
-  float: left;
+  display: inline-block;
+  float: none;
   font-size:@font-size-xsmall;
   .wmd-button-bar-btn-text{
     display:none;
   }
   @media (min-width: @screen-sm-min){
-    float:none;
     text-align: center;
-    display: inline-block;
     width: auto;
     padding: 5px 10px;
     .wmd-button-bar-btn-text{
