@@ -52,14 +52,16 @@
 // -------------------------
 
 @font-family-sans-serif:  'Source Sans Pro', sans-serif;
-@font-family-serif:       'Merriweather', serif;
-@font-weight-serif:       400;
 @font-family-monospace:   'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', Monaco, 'Courier New', monospace;;
 @font-family-base:        @font-family-sans-serif;
 @font-family-display:     @font-family-sans-serif;
 
+@font-family-serif:       'Merriweather', serif;
+@font-size-comment:       15px;
+@font-weight-serif:       400;
+@line-height-comment:     24px;
+
 @font-size-base:          20px;
-@font-size-comment:       14px;
 @font-size-large:         ceil((@font-size-base * 1.2)); // ~24px
 @font-size-medium:        ceil((@font-size-base * 1)); // ~20px
 @font-size-small:         ceil((@font-size-base * 0.8)); // ~16px
@@ -74,7 +76,7 @@
 
 @line-height-base:        1.5; // 30/20
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~30px
-@line-height-comment:     ceil((@font-size-comment * @line-height-base));
+
 
 @headings-font-family:    @font-family-display;
 @headings-font-weight:    600;
