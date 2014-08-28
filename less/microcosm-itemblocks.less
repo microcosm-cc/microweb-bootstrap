@@ -18,10 +18,10 @@ div.block {
 	}
 	.cell-title {
 		// Shows the title of the item
-		display: inline;
+		//display: inline;
 		text-decoration: none;
 		font-size: @font-size-base;
-		margin: 0;
+		margin: 0 0 -4px 0;
 		padding: 0;
 		a {
 			color: #00000F;
@@ -36,18 +36,27 @@ div.block {
 			padding: 0 5px;
 			border-radius: 5px;
 		}
+		img {
+			width: @avatar-size-small;
+			height: @avatar-size-small;
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: 7px;
+			margin-right: 7px;
+		}
 	}
 	.cell-started {
 		// @profile start n time ago
+		display: none;
 		font-size: @font-size-small;
 		color: #999;
-		width: 100%;
-		img.img-badge {
-			// For profiles on search results
-			width: @avatar-size-small;
-			height: @avatar-size-small;
-			border-radius: 3px;
+		@media (min-width: @grid-float-breakpoint) {
+			display: inline-block;
 		}
+	}
+	.cell-forum {
+		font-size: @font-size-small;
+		color: #999;
 	}
 	.cell-stats {
 		// Item count, comment count, view count
@@ -62,15 +71,15 @@ div.block {
 	}
 	.cell-recent {
 		// @profile replied n time ago
-		display: none;
-		float: right;
+		display: block;
 		margin-top: 0;
 		color: #999;
 		font-size: @font-size-small;
-		clear: right;
+		clear: both;
+		white-space: nowrap;
 		@media (min-width: @grid-float-breakpoint) {
-			display: block;
-			white-space: nowrap;
+			float: right;
+			clear: right;
 		}
 	}
 	.cell-meta-event {
@@ -78,6 +87,7 @@ div.block {
 		overflow: auto;
 		vertical-align: middle;
 		color: #3175AA;
+		background-color: #FFF;
 		font-size: @font-size-xsmall;
 		max-width: 100%;
 		box-shadow: 0 0 1px;
@@ -99,7 +109,7 @@ div.block {
 				border-left: 1px solid #eee;
 				border-radius: 0 2px 2px 0;
 				span {
-					max-width: 100%;
+					max-width: 101%;
 					float: right;
 					overflow: hidden;
 					text-overflow: ellipsis;
@@ -129,5 +139,14 @@ div.block {
 				}
 			}
 		}
+	}
+	.cell-meta-huddle {
+		display: inline-block;
+	}
+	.cell-profile-message {
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+		color: #ccc;
 	}
 }
